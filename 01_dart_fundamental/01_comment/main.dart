@@ -5,6 +5,14 @@ void main(List<String> arguments) {
   print('Hello Dart! Dart is great.');
   // Testing documentation comment with [].
   print('6 * 7 = ${calculate()}');
+
+  var x = 5;
+
+  x = 7;
+
+// x--;
+
+  print(x);
 }
 
 int calculate() {
