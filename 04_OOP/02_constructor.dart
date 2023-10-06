@@ -29,11 +29,10 @@ class Animal {
 
 void main() {
   var dicodingCat = Animal('', 4.2)
-    ..name = 'Kiw-Kiw'
+    ..name = 'Kiw-Kiw' // cascade notation
     ..eat();
 
   // sama dengan
-
   // var dicodingCat = Animal('', 2, 4.2);
   // dicodingCat.name = 'Gray';
   // dicodingCat.eat();
