@@ -2,10 +2,11 @@ void main() {
   var dicodingBird = Bird('Birdy', 2, 0.8, 'Gray');
 
   dicodingBird.fly();
+  dicodingBird.walk();
   dicodingBird.eat();
 }
 
-class Bird extends Animal implements Flyable {
+class Bird extends Animal implements Flyable, wallkable {
   String featherColor;
 
   Bird(String name, int age, double weight, this.featherColor)
@@ -15,10 +16,19 @@ class Bird extends Animal implements Flyable {
   void fly() {
     print('$name is flying');
   }
+
+  @override
+  void walk() {
+    print("walking");
+  }
 }
 
 class Flyable {
   void fly() {}
+}
+
+abstract class wallkable {
+  void walk() {}
 }
 
 class Animal {
